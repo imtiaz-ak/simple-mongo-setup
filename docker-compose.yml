@@ -1,0 +1,9 @@
+version: "3"
+services:
+  mongodb:
+    image: mongo:5.0
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongo-admin
+      - MONGO_INITDB_ROOT_PASSWORD=mongo-password
+    ports:
+      - 8320:27017
